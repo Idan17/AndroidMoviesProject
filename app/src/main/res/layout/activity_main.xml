@@ -11,7 +11,7 @@
         android:id="@+id/emailEditText"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="128dp"
         android:hint="Email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,11 +30,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/emailEditText"
         app:layout_constraintWidth_percent="0.8" />
+
     <Button
         android:id="@+id/signInButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="256dp"
         android:text="Sign In"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,12 +51,18 @@
         app:layout_constraintTop_toBottomOf="@id/signInButton" />
 
     <TextView
-        android:id="@+id/statusTextView"
-        android:layout_width="wrap_content"
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Status"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="MovieStar"
+        android:textAlignment="center"
+        android:textColor="#7338D9"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/emailEditText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/registerButton" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
